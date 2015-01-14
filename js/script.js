@@ -2,13 +2,17 @@ $(window).load(function() {
 	// loads fade in effects
    $('.name').fadeIn(1000);
    $('.links').delay(700).fadeIn(600);
+
+   $('.biography').delay(600).fadeIn(600);
+   $('.contact').delay(600).fadeIn(600);
+
    $('.footer').delay(1600).fadeIn(500);
 
-   bacon()
+   nav()
 
 });
 
-function bacon() {
+function nav() {
 	$('.open_icon').click(function() {
 
 		$(this).fadeOut(300);

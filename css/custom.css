@@ -58,6 +58,113 @@
 	text-decoration: none;
 }
 
+.biography {
+	overflow: scroll;
+	display: none;
+	
+	position: relative;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 60vw;
+	height: 70vh;
+}
+
+.biography img {
+	width: 47%;
+	height: 60vh;
+	float: left;
+}
+
+.biography p {
+	width: 47%;
+	float: right;
+
+	font-family: 'Raleway', arial;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+.contact {
+	display: none;
+	
+	position: relative;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 30vw;
+	height: 50vh;
+	color: #202020;
+}
+
+.contact h1 {
+	font-family: 'Raleway', arial;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+.contact li {
+	list-style: none;
+	font-family: 'Raleway';
+	font-weight: 300;
+	margin: 10px 0px 10px 0px;
+}
+
+.button {
+	margin: 20px 0px 20px 0px;
+	padding: 10px 10px 10px 10px;
+	width: 160px;
+	float: left;
+
+	background-color: orange;
+	border-radius: 5px;
+	text-align: center;
+	font-family: 'Raleway', arial;
+	font-weight: 300;
+	color: #202020;
+	text-decoration: none;
+
+	-webkit-transition: 0.4s all ease;
+	-moz-transition: 0.4s all ease;
+	-o-transition: 0.4s all ease;
+	transition: 0.4s all ease;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: white;
+	box-shadow: 5px 5px 0px #f1c40f;
+}
+
+.contact span {
+	font-weight: 500;
+}
+
+.social_media {
+	text-decoration: none;
+	color: #202020;
+	-webkit-transition: 0.4s all ease;
+	-moz-transition: 0.4s all ease;
+	-o-transition: 0.4s all ease;
+	transition: 0.4s all ease;
+}
+
+.social_media:hover {
+	text-decoration: none;
+	color: orange;
+}
+
+.social_media:active {
+	text-decoration: none;
+	color: #202020;
+}
+
+.contact i {
+	font-size: 2em;
+}
+
+/* DEFAULT FOR EVERY PAGE */
+
 .open_icon {
 	position: absolute;
 	right: 10px;
@@ -166,4 +273,20 @@
 	font-size: 1em;
 
 	margin-top: 10px;
+}
+
+.footer_content a {
+	color: orange;
+	font-weight: 300;
+}
+
+.footer_content a:hover {
+	color: orange;
+	font-weight: 300;
+}
+
+.footer_content a:visited {
+	color: orange;
+	font-weight: 300;
+	text-decoration: none;
 }
