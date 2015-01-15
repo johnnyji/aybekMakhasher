@@ -94,7 +94,7 @@
 }
 
 .biography {
-	overflow: scroll;
+	overflow: auto;
 	display: none;
 	
 	position: relative;
@@ -249,6 +249,20 @@
 .job h3 {
 	font-weight: 400;
 	color: orange;
+}
+
+.job a {
+	text-decoration: none;
+	color: orange;
+	-webkit-transition: 0.4s all ease;
+	-moz-transition: 0.4s all ease;
+	-o-transition: 0.4s all ease;
+	transition: 0.4s all ease;
+}
+
+.job a:hover {
+	text-decoration: none;
+	color: #202020;
 }
 
 /* DEFAULT FOR EVERY PAGE */
