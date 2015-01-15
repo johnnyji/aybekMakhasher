@@ -4,6 +4,7 @@ $(window).load(function() {
    $('.links').delay(700).fadeIn(600);
 
    $('.biography').delay(600).fadeIn(600);
+   $('.resume_sheet').delay(600).fadeIn(600);
    $('.contact').delay(600).fadeIn(600);
 
    $('.footer').delay(1600).fadeIn(500);
@@ -22,6 +23,14 @@ function nav() {
 			left: '-200px'
 		})
 
+		$('.container_resume').animate({
+			left: '-200px'
+		})
+
+		$('.container_contact').animate({
+			left: '-200px'
+		})
+
 		$('.sidebar').animate({
 			right: '0px'
 		})
@@ -32,6 +41,14 @@ function nav() {
 		$('.open_icon').fadeIn(300);
 
 		$('.container_frame').animate({
+			left: '0px'
+		})
+
+		$('.container_resume').animate({
+			left: '0px'
+		})
+
+		$('.container_contact').animate({
 			left: '0px'
 		})
 
