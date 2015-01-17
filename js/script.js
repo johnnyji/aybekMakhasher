@@ -9,10 +9,19 @@ $(window).load(function() {
 
    $('.footer').delay(1600).fadeIn(500);
 
-   nav()
+   nav();
 
 });
 
+// instagram feed
+var feed = new Instafeed ({
+        get: "tagged",
+        tag: "dinner",
+        clientId: "26795cc27861465b9cbff9ea5abf4aaf"
+    });
+feed.run();
+
+//open and close sidebar
 function nav() {
 	$('.open_icon').click(function() {
 
