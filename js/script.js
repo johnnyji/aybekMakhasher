@@ -1,3 +1,4 @@
+
 $(window).load(function() {
 	// loads fade in effects
    $('.name').fadeIn(1000);
@@ -10,16 +11,17 @@ $(window).load(function() {
    $('.footer').delay(1600).fadeIn(500);
 
    nav();
-
 });
 
-// instagram feed
-var feed = new Instafeed ({
-        get: "tagged",
-        tag: "dinner",
-        clientId: "26795cc27861465b9cbff9ea5abf4aaf"
+//loads photos from instagram using instafeed.js
+var feed = new Instafeed({
+        get: 'user',
+        useHttp: 'true',
+        userId: 1419191820,
+        accessToken: '1419191820.eb4a31e.488e272886ee4a36a7731b7f87c10a80',
+        limit: '15'
     });
-feed.run();
+		feed.run();
 
 //open and close sidebar
 function nav() {

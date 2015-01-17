@@ -3,23 +3,23 @@
 }
 
 .container_frame {
-	height: 100vh;
+	overflow: auto;
+	min-height: 100vh;
+	height: auto;
 	width: 100vw;
-	position: absolute;
+	position: relative;
 	left: 0;
-
-	overflow: hidden;
 }
 
 .container_resume {
 	height: 100vh;
 	width: 100vw;
-	position: absolute;
+	position: relative;
 	left: 0;
 
 	overflow: hidden;
 
-	background: url('https://scontent-a-sea.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/581422_2486331775349_1830677693_n.jpg?oh=dcab03878e3a0cfccdc9c1e1233ea987&oe=5530D69D') no-repeat center center fixed;
+	background: url('https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10941840_10153134018024369_1897583145039536199_n.jpg?oh=a634f40728f54dec571936ae77b5a8e2&oe=556539FF&__gda__=1428501418_95aa02e82155ca5721b397db8c6b3f1a') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -34,7 +34,7 @@
 
 	overflow: hidden;
 
-	background: url('https://scontent-a-sea.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/426239_2486331975354_1320541713_n.jpg?oh=a71f1577de3c38c32e5898d41ee859a2&oe=556DACF7') no-repeat center center fixed;
+	background: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10933928_10153134017964369_2721470045173838763_n.jpg?oh=a17b160e0142c2c3903eb2801e979e48&oe=556983F9&__gda__=1428659789_47b7eca48d3f0c94ba573d4a8c3407a9') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -95,9 +95,9 @@
 
 .biography {
 	overflow: auto;
-	display: none;
+	display: inline-block;
 	
-	position: relative;
+	position: absolute;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
@@ -267,6 +267,33 @@
 
 /*CULTURE PAGE CAROUSEL*/
 
+#instafeed {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 45%;
+	left: 50%;
+	width: 80vw;
+	height: 80vh;
+}
+
+#instafeed img {
+	-webkit-filter: brightness(60%);
+	-moz-filter: brightness(60%);
+	-o-filter: brightness(60%);
+	filter: brightness(60%);
+
+	margin: 5px 5px 5px 5px;
+}
+
+#instafeed img:hover {
+	-webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	filter: brightness(100%);
+}
 .prev {
 	font-size: 2em;
 	position: absolute;
