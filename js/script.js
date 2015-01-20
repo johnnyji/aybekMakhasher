@@ -23,7 +23,7 @@ var feed = new Instafeed({
         limit: '20',
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
-        template: '<a href="{{link}}" target="_blank"><img class="img" src="{{image}}"/></a><p><a href="{{link}}" target="_blank"><i class="fa fa-heart"></i>&nbsp;{{likes}}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-comment"></i>&nbsp;{{comments}}</a></p>'
+        template: '<a href="{{link}}" target="_blank"><img class="img" src="{{image}}"/></a><p><a href="{{link}}" target="_blank"><i class="fa fa-heart"></i>&nbsp;{{likes}}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-comment"></i>&nbsp;{{comments}}<br></a>{{caption}}</p>'
     });
 		feed.run();
 
