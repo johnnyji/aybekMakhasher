@@ -7,10 +7,11 @@ $(window).load(function() {
    $('.biography').delay(600).fadeIn(600);
    $('.resume_sheet').delay(600).fadeIn(600);
    $('.contact').delay(600).fadeIn(600);
-
+   $('#instafeed').delay(600).fadeIn(600);
    $('.footer').delay(1600).fadeIn(500);
 
    nav();
+   upIcon();
 });
 
 //loads photos from instagram using instafeed.js
@@ -19,7 +20,10 @@ var feed = new Instafeed({
         useHttp: 'true',
         userId: 1419191820,
         accessToken: '1419191820.eb4a31e.488e272886ee4a36a7731b7f87c10a80',
-        limit: '15'
+        limit: '20',
+        sortBy: 'most-recent',
+        resolution: 'standard_resolution',
+        template: '<a href="{{link}}" target="_blank"><img class="img" src="{{image}}"/></a><p><a href="{{link}}" target="_blank"><i class="fa fa-heart"></i>&nbsp;{{likes}}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-comment"></i>&nbsp;{{comments}}</a></p>'
     });
 		feed.run();
 
@@ -67,4 +71,26 @@ function nav() {
 			right: '-200px'
 		})
 	});
+}
+
+//return to top icon
+function upIcon() {
+	var upIcon = $('.up_icon');
+
+	//shows and hides up icon dependant on user scroll
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+			upIcon.fadeIn(400);
+		} else if ($(window).scrollTop() < 100) {
+			upIcon.fadeOut(400);
+		}
+	});
+	
+	//scrolls back up when up icon is clicked
+	upIcon.click(function() {
+		if($(window).scrollTop() !== 0) {
+			$(window).scrollTop(0);
+		}
+	});
+
 }
