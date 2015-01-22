@@ -12,6 +12,7 @@ $(window).load(function() {
 
    nav();
    upIcon();
+   smoothScroll();
 });
 
 //loads photos from instagram using instafeed.js
@@ -23,7 +24,7 @@ var feed = new Instafeed({
         limit: '20',
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
-        template: '<a href="{{link}}" target="_blank"><img class="img" src="{{image}}"/></a><p><a href="{{link}}" target="_blank"><i class="fa fa-heart"></i>&nbsp;{{likes}}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-comment"></i>&nbsp;{{comments}}<br></a>{{caption}}</p>'
+        template: '<div class="instagram-image"><a href="{{link}}" target="_blank"><img class="img" src="{{image}}"/></a><p><a href="{{link}}" target="_blank"><i class="fa fa-heart"></i>&nbsp;{{likes}}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-comment"></i>&nbsp;{{comments}}<br></a>{{caption}}</p></div>'
     });
 		feed.run();
 
@@ -89,8 +90,14 @@ function upIcon() {
 	//scrolls back up when up icon is clicked
 	upIcon.click(function() {
 		if($(window).scrollTop() !== 0) {
-			$(window).scrollTop(0);
+			$('html, body').animate({
+				scrollTop: '0'
+			}, 1000, "easeOutExpo");
 		}
 	});
+
+
+//scrolls smoothly back to top
+
 
 }

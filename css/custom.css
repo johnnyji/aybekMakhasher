@@ -69,9 +69,11 @@
 	display: none;
 }
 
-.name_container a {
+.name_container p {
 	text-decoration: none;
-	color: black;
+	color: inherit;
+	display: inline-block;
+	text-align: center;
 
 	font-family: 'Raleway', Garamond;
 	font-weight: 200;
@@ -84,12 +86,8 @@
 	transition: all 0.4s ease;
 }
 
-.name_container a:hover {
+.name_container p:hover {
 	color: orange;
-	text-decoration: none;
-}
-
-.name_container a:visited {
 	text-decoration: none;
 }
 
@@ -112,6 +110,10 @@
 	width: 47%;
 	height: 60vh;
 	float: left;
+	-webkit-filter: brightness(80%);
+	-moz-filter: brightness(80%);
+	-o-filter: brightness(80%);
+	filter: brightness(80%);
 }
 
 .biography p {
