@@ -298,6 +298,15 @@
 /*instagram feed resizing in different viewports*/
 
 @media (min-width: 450px) and (max-width: 680px) {
+
+	.name {
+		font-size: 3.5em;
+	}
+
+	.links {
+		font-size: 0.6em;
+	}
+
 	#instafeed {
 		font-size: 1em;
 	}
@@ -306,23 +315,78 @@
 		width: 350px;
 	}
 
+
+	.biography img {
+		width: 80%;
+		float: none;
+		position: relative;
+
+	}
+
 	.biography p {
+		margin-top: 2em;
+		width: 80%;
 		font-size: 1em;
+		float: none;
+	}
+
+	.resume_sheet {
+		overflow: auto;
+		padding: 2.5em 4em 7em 4em;
+	}
+
+	p.footer_content {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 0;
 	}
 
 }
 
 @media (max-width: 449px) {
+
+	.name {
+		font-size: 3em;
+	}
+
+	.links {
+		font-size: 0.6em;
+	}
+
 	#instafeed {
 		font-size: 1em;
 	}
 
 	.img {
-		width: 250px;
+		width: 225px;
+	}
+
+	.biography img {
+		width: 80%;
+		height: 60%;
+		float: none;
+		position: relative;
+
 	}
 
 	.biography p {
-		font-size: 0.8em;
+		margin-top: 2em;
+		width: 80%;
+		font-size: 1em;
+		float: none;
+	}
+
+	.resume_sheet {
+		overflow: auto;
+		padding: 2.5em 4em 7em 4em;
+	}
+
+	p.footer_content {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 0;
 	}
 
 }
@@ -425,13 +489,14 @@
 	z-index: 10;
 
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	right: -200px;
 }
 
 .sidebar_nav {
 	position: absolute;
-	top: 40%;
+	bottom: 0;
+	margin-bottom: 0;
 
 	color: white;
 	list-style: none;
