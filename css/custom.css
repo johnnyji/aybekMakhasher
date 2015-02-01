@@ -363,18 +363,23 @@
 	}
 
 	.biography img {
-		width: 80%;
+		width: 90%;
 		height: 60%;
 		float: none;
 		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 
 	}
 
 	.biography p {
 		margin-top: 2em;
-		width: 80%;
+		width: 90%;
 		font-size: 1em;
 		float: none;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.resume_sheet {
@@ -384,6 +389,8 @@
 
 	p.footer_content {
 		width: 80%;
+		font-size: 0.8em;
+		position: relative;
 		margin-left: auto;
 		margin-right: auto;
 		bottom: 0;
