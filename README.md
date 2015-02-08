@@ -4,7 +4,7 @@ This is my very first client and I've created a professional resume website for 
 in the culinary industry. The website was hand coded and designed by yours truely, and I
 hope that this website will open some serious doors for my client down the road.
 
-Please check out the website live at [www.omakhasher.com]
+Please check out the website live at www.omakhasher.com
 
 ### During the creation process, this website helped me better understand:
 
