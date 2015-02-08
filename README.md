@@ -1,11 +1,18 @@
 ## aybekMakhasher
 
-This is a professional website I'm currently building for a local aspiring cook from Vancouver B.C. 
+This is my very first client and I've created a professional resume website for him to use
+in the culinary industry. The website was hand coded and designed by yours truely, and I
+hope that this website will open some serious doors for my client down the road.
 
-This is my first official client and 3rd overall project, and it's so far taught me:
+Please check out the website live at [www.omakhasher.com]
 
+### During the creation process, this website helped me better understand:
+
+- CSS Media Queries
 - jQuery
-- How to use the Instsgram API
+- Instagram API (Instafeed.js)
 - Responsive design
-- Minimalistic design
-- How to work with clients to bring an idea to life
+- Minimalisic design
+- UI driven design
+- Understanding clientele needs
+

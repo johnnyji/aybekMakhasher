@@ -368,6 +368,9 @@
 		float: none;
 		position: relative;
 		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
 		transform: translateX(-50%);
 
 	}
@@ -379,6 +382,9 @@
 		float: none;
 		position: relative;
 		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
 		transform: translateX(-50%);
 	}
 
@@ -400,6 +406,9 @@
 
 .img:hover {
 	-webkit-filter: brightness(50%) grayscale(100%);
+	-moz-filter: brightness(50%) grayscale(100%);
+	-o-filter: brightness(50%) grayscale(100%);
+	filter: brightness(50%) grayscale(100%);
 }
 
 #instafeed a {
