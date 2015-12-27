@@ -2,6 +2,12 @@
 	box-sizing: border-box;
 }
 
+.ad {
+	height: 100px;
+	width: 300px;
+	background-color: red;
+}
+
 .container_frame {
 	overflow: auto;
 	min-height: 100vh;
